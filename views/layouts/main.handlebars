@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="/assets/js/interact.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Fruktur|Gravitas+One" rel="stylesheet">
+
+		<title>Delightful Bites</title>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<nav class="darken">
+        <div class="dropdown">
+          <a class="account" >Menu</a>
+          <div class="submenu">
+          <ul class="root">
+          <li ><a href="/" >Home</a></li>
+          <li ><a href="/" >Burgers</a></li>
+          <li ><a href="/sweets">Sweets</a></li>
+          {{!-- <li ><a href="#feedback">Send Feedback</a></li> --}}
+          </ul>
+          </div>
+          </div>
+			    <h1 id="page-header">Delightful-Bites!</h1>
+			</nav>
+			{{{ body }}}			
+	</body>
+
+<script type="text/javascript">
+	$('input').on('focusin', function() {
+	  $(this).parent().find('label').addClass('active');
+	});
+
+	$('input').on('focusout', function() {
+	  if (!this.value) {
+	    $(this).parent().find('label').removeClass('active');
+	  }
+	});
+	
+	interact('.btn-tap').on('tap', function (event) {
+    event.currentTarget.classList.toggle('switch-bg');
+    event.preventDefault();
+  }).on('doubletap', function (event) {
+    event.currentTarget.classList.toggle('large');
+    event.currentTarget.classList.remove('rotate');
+    event.preventDefault();
+  }).on('hold', function (event) {
+    event.currentTarget.classList.toggle('rotate');
+    event.currentTarget.classList.remove('large');
+  });
+  $('.form').submit(function() {
+    if ($.trim($("#formVal").val()) === "") {
+        alert('you did not fill out one of the fields');
+        return false;
+    }
+});
+  var element = document.getElementById('grid-snap'),
+    x = 0, y = 0;
+
+interact(element)
+  .draggable({
+    snap: {
+      targets: [
+        interact.createSnapGrid({ x: 30, y: 30 })
+      ],
+      range: Infinity,
+      relativePoints: [ { x: 0, y: 0 } ]
+    },
+    inertia: true,
+    restrict: {
+      restriction: element.parentNode,
+      elementRect: { top: 0, left: 0, bottom: 1, right: 1 },
+      endOnly: true
+    }
+  })
+  .on('dragmove', function (event) {
+    x += event.dx;
+    y += event.dy;
+
+    event.target.style.webkitTransform =
+    event.target.style.transform =
+        'translate(' + x + 'px, ' + y + 'px)';
+  });
+  $(".account").click(function() {
+    var X = $(this).attr('id');
+    if (X == 1) {
+        $(".submenu").hide();
+        $(this).attr('id', '0');
+    }
+    else {
+        $(".submenu").show();
+        $(this).attr('id', '1');
+    }
+});
+
+//Mouse click on sub menu
+$(".submenu").mouseup(function() {
+    return false
+});
+
+//Mouse click on my account link
+$(".account").mouseup(function() {
+    return false
+});
+
+//Document Click
+$(document).mouseup(function() {
+    $(".submenu").hide();
+    $(".account").attr('id', '');
+});
+</script>
+</html>

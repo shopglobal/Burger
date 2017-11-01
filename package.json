@@ -1,0 +1,33 @@
+{
+  "name": "burger-restaurant",
+  "version": "1.0.9",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shopglobal/burger.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shopglobal/burger/issues"
+  },
+  "homepage": "https://github.com/shopglobal/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars-helpers": "^0.9.8",
+    "method-override": "^2.3.9",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "pm2": "^2.7.2"
+  },
+  "engines": {
+    "node": "6.11.0"
+  }
+}

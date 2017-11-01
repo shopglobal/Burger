@@ -1,0 +1,466 @@
+ body {
+	background-image: url(../images/restaurant-bg.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 30px; 
+	
+}
+div.jumbotron, html {
+	position: relative;
+	background-color:transparent;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+/*	margin-bottom: 40px;*/
+	font-family: 'Fruktur', cursive;
+	
+}
+div.container, {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Fruktur', cursive;
+	
+}
+div.available {
+	color: #fff;
+	/*//greyscale ToDo*/
+}
+div.devoured {
+	background-image: url(../images/restaurant-bg.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	color: #fff; 
+	/*//greyscale ToDo*/
+}
+
+main {
+	width: 100%;
+	margin: 0 auto;
+	
+
+}
+
+nav {
+	text-align: center;
+	width: 100%;
+	background: #272826;
+}
+
+
+
+div.darken {
+	-webkit-box-shadow: 0 10px 10px 0px rgba(0,0,0, 0.5);
+	-moz-box-shadow: 0 10px 10px 0px rgba(0,0,0, 0.5);
+	box-shadow: 0 10px 10px 0px rgba(0,0,0, 0.5);
+}
+
+/*div#box{
+	position: relative;  
+    overflow:hidden;
+    border:1px solid black;
+    padding: 10px;
+}
+*/
+/*div#content{
+	position: relative;
+
+    
+     * Uncomment to see scrollbar
+    width:300px;
+    
+    
+}*/
+
+section {
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button {
+
+}
+
+button:hover {    
+	animation-name: buttonHover;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+/*@keyframes buttonHover {
+    to {background-color: rgba(246,200,71,1);}
+}*/
+#outer-dropzone {
+  height: 140px;
+}
+
+#inner-dropzone {
+  height: 80px;
+}
+
+.dropzone {
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 80%;
+  transition: background-color 0.3s;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  padding: 2em 0.5em;
+
+  color: #fff;
+  background-color: #29e;
+  border: solid 2px #fff;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #4e4;
+}
+#grid-snap {
+  width: 50%;
+  background-color: #e2c106;
+  color: #fff;
+  font-size: 1.125em;
+  padding: 5%;
+  margin: 02% 0% 0% 30%;
+  border-radius: 100%;
+}
+.btn-tap {
+  /*width: 50%;*/
+  height: 100%;
+  padding: 5%;
+  margin: 02% 0% 0% 30%;
+  border-radius: 100%;
+  font-size: 1.125em;
+  text-align: center;
+  color: #fff;
+  background-color: #e2c106;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-devour {
+  /*width: 50%;*/
+  height: 100%;
+  padding: 5%;
+  margin: 02% 0% 0% 30%;
+  border-radius: 100%;
+  font-size: 1.125em;
+  text-align: center;
+  color: #fff;
+  background-color: #e2c106;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tap-target.switch-bg {
+  background-color: #565501;
+}
+
+.tap-target.large {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#page-header {
+	margin: 0px;
+}
+
+#page-body {
+
+}
+
+.drawn-border {
+	display: block;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	padding:1em;
+	line-height:1.5em;
+	background:hsla(67, 95%, 95%, 1);
+	color: hsla(0, 95%, 35%, 1);
+	border: solid 5px rgba(246,200,71,1);
+}
+
+section.parallax { 
+	width: 100%;
+    text-align: center;
+    padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+section.parallax::after {
+	content: "";
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+	justify-content: center;
+	height: 300px;
+	width: 100%;
+	background-image: url(../images/burger-background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	animation-name: parallaxBack;
+	animation-duration: 6s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes parallaxBack {
+    from {background-position: 50% 0px;}
+    to {background-position: 50% -100px;}
+}
+* {
+    margin: 0;
+}
+#a{
+    width : 60%;
+    position: relative;
+    background-color : black;
+    float: left
+}
+#b{
+    width : 60%;
+    position: relative;
+    background-color : orange;  
+}
+#c{
+    width : 100%;
+    position: relative;
+    background-color : green;
+    float : right;
+}
+@media (max-width: 320px) {
+   
+#a, #b, #c {
+    float: none;
+    width: auto
+}
+}
+
+.parallax img {
+
+}
+.sweetsParallax img {
+
+}
+section.sweetsParallax { 
+	width: 100%;
+    text-align: center;
+    padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+section.sweetsParallax::after {
+	content: "";
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+	justify-content: center;
+	height: 300px;
+	width: 100%;
+	background-image: url(../images/donut-background.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	animation-name: parallaxBack;
+	animation-duration: 6s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+section.burger-ops {
+	display: flex;
+	justify-content: row;	
+}
+section.sweets-ops {
+	display: flex;
+	justify-content: row;	
+}
+.options {
+	flex-grow: 1;
+}
+.burger-status {
+	font-size: 1.6em;
+}
+.sweets-status {
+	font-size: 1.6em;
+}
+.create-update-form .form-group {
+	position: relative;
+	margin: 05% 05% 05% 05%;
+}
+
+label {
+	color: red;
+	position: absolute;
+	top: 0;
+	font-size: 18px;
+	margin: 10px;
+	padding: 0 10px;
+	-webkit-transition: top .2s ease-in-out, 
+	                  font-size .2s ease-in-out;
+	transition: top .2s ease-in-out, 
+	          font-size .2s ease-in-out;
+}
+
+.active {
+  top: 0px;
+  font-size: 12px;
+  color: red;
+}
+
+
+input[type=text] {
+  padding:  24px 16px 18px 16px;
+  font-size: 20px;
+  color: red;
+} 
+
+input[type=text]:focus {
+  outline: none;
+}
+
+button {
+	padding: 10px 20px;
+	text-transform: uppercase;
+	margin: 10px 0px;
+	color: white;
+	background: red;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.dropdown 
+{
+color: #555;
+margin: 3px -22px 0 0;
+position: relative;
+height: 17px;
+text-align:left;
+}
+
+.submenu
+{
+background: #fff;
+position: absolute;
+top: -12px;
+left: -20px;
+z-index: 100;
+width: 135px;
+display: none;
+margin-left: 10px;
+padding: 40px 0 5px;
+border-radius: 6px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+.dropdown li a 
+{
+color: #555555;
+display: block;
+font-family: arial;
+font-weight: bold;
+padding: 6px 15px;
+cursor: pointer;
+text-decoration:none;
+}
+
+.dropdown li a:hover
+{
+background:#155FB0;
+color: #FFFFFF;
+text-decoration: none;
+}
+a.account 
+{
+font-size: 11px;
+line-height: 16px;
+color: #555;
+position: absolute;
+z-index: 110;
+display: block;
+padding: 11px 0 0 20px;
+height: 28px;
+width: 115px;
+margin: 11px 0 0 10px;
+text-decoration: none;
+background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAIklEQVQI12NgYGBwA+JsLBgkDgZuuCTQFSAk/v//j64ADgAE3AirQOYYigAAAABJRU5ErkJggg==) 116px 17px no-repeat;
+cursor:pointer;
+
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+.root
+{
+list-style:none;
+margin:0px auto;
+padding:0px;
+font-size: 11px;
+padding: 11px 0 0 0px;
+border-top:1px solid #dedede;
+}
