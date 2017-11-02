@@ -212,7 +212,7 @@ h1, #avail, .status {margin:0% 10% 0% 10%;}
 #page-body {
 
 }
-input#formVal.drawn-border,{position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 400px;}
+input.formVal.drawn-border,{position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 400px;}
 .drawn-border, label {
 	display: block;
 	position: relative !important;
@@ -315,7 +315,7 @@ div#c{
     background-color : green;
     float : right;
 }
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
 div,.col-12,.form-group,.s12 {
 	background-color:transparent !important;;
 }
@@ -339,12 +339,13 @@ label {display:none;}
 .btn-img.btn-tap{margin:05% 0% 0% 45%;}
 #grid-snap {margin:0% 30% 0% 37%}
 #grid-add {margin:5% 20% 0% 65%}
-input#formVal.drawn-border {position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 10px;}
+input.formVal.drawn-border {position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 10px;}
 #this.burger-status {color:#bb5c06;}
 img.drawn-border,button,.btn-img,.btn-tap{margin:0% 0% 0% 50%; margin-left: 10%}
 #that {font-size: 1.9em;color:#fbd303;position:relative;margin:0% 20% 0% 30%;padding:0px 90px 0px 0px;text-decoration: underline;}
 #avail {color:#000;text-decoration: underline;}
 h1.status {position:relative;margin:0% 0% 0% 20%;padding:0px 0px 0px 10px;}
+#score {font-size:3em;text-decoration: underline;}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
     width:  auto;
@@ -368,7 +369,7 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px){
 div,.col-12,.form-group,.s12 {
 	background-color:transparent !important;;
 }
@@ -397,7 +398,8 @@ label {display:none;}
 #avail {color:#000;text-decoration: underline;}
 #that{margin:0% 0% 0% 15%; text-align: center;font-size:5em;}
 #li,#this.burger-status{text-decoration: bold;}
-.li,.burger-status,.striped,p{font-size:5em;}
+.li,.burger-status,.striped,p.{font-size:5em;}
+#score {font-size:2em;text-decoration: underline;}
 h1,#avail,.status{text-align: center}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
@@ -422,7 +424,63 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 550px){
+div,.col-12,.form-group,.s12 {
+	background-color:transparent !important;;
+}
+h1,h2,h3,h4{font-family: 'Fruktur', cursive;}
+div#a, div#b, div#c, h2 {
+    /*float: none;*/
+    width:  100%;
+    height:  100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+label {display:none;}
+#thread {font-size:1.5em;}
+.col-3{width:100%;}
+.col-9{width:100%;}
+.col-12{width:100%;}
+.btn-img.btn-tap{margin:05% 0% 0% 45%;}
+#this.burger-status {color:#bb5c06;}
+#grid-snap {margin:0% 30% 0% 37%}
+#grid-add {margin:5% 20% 0% 65%}
+#that {font-size: 1.9em;color:#fbd303;position:relative;margin:0% 20% 0% 30%;padding:0px 90px 0px 0px;text-decoration: underline;}
+#avail {color:#000;text-decoration: underline;}
+#that{margin:0% 0% 0% 15%; text-align: center;font-size:5em;}
+#li,#this.burger-status{text-decoration: bold;}
+.li,.burger-status,.striped,p.{font-size:5em;}
+#formAdd {margin:5% 20% 0% 40%}
+#score {font-size:1.3em;text-decoration: underline;}
+h1,#avail,.status{text-align: center}
+li.burger-status, .btn, #grid-snap,li,h4 {
+    /*float: none;*/
+    width:  auto;
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+ul.devoured-status {
+    /*float: none;*/
+    width:  100%;
+    height: 100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
+@media only screen and (max-width: 550px) and (min-width: 425px){
    div,.col-12,.form-group,.s12 {
 	background-color:transparent !important;;
 }
@@ -448,10 +506,12 @@ h1,#avail,.status,#that{text-align: center}
 #this.burger-status {color:#bb5c06;}
 h1,h2,h3,h4{font-family: 'Fruktur', cursive;}
 #grid-snap {margin:0% 30% 0% 37%}
-#grid-add {margin:5% 20% 0% 55%}
+#grid-add {margin:5% 50% 0% 35%}
 #that {font-size: 2.5em;color:#fbd303;position:relative;margin:0% 30% 0% 30%;padding:0px 100px 0px 0px;text-decoration: underline;}
 #avail {color:#000;text-decoration: underline;}
 #that{margin:0% 0% 0% 15%; text-align: center;}
+#formAdd {margin:5% 20% 0% 30%}
+#score {font-size:1.3em;text-decoration: underline;}
 h1,#page-header{font-size:1.2em;}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
@@ -476,8 +536,7 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) and (min-width: 375px){
    div,.col-12,.form-group,.s12 {
 	background-color:transparent !important;
 }
@@ -502,11 +561,13 @@ label {display:none;}
 .dropdown,.sub-menu{display:none;}
 /*h1,#that,.status{text-align: left}*/
 #grid-snap {margin:0% 50% 0% 20%}
-#grid-add {margin:5% 50% 0% 30%}
+#grid-add {margin:5% 50% 0% 35%}
 #this.burger-status {color:#bb5c06;}
 #that {font-size: 1.5em;color:#fbd303;position:relative;margin:0% 20% 0% 30%;padding:0px 90px 0px 0px;text-decoration: underline;}
 #avail {color:#000;text-decoration: underline;}
 .btn-img.btn-tap{margin:05% 0% 0% 45%;}
+#score {font-size:.6em;text-decoration: underline;}
+#formAdd {margin:5% 20% 0% 35%}
 li#this.burger-status{text-decoration: bold;}
 h1,#avail,.status{text-align: center}
 li.burger-status, .btn, #grid-snap,li,h4 {
@@ -532,8 +593,7 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) and (min-width: 325px){
    div,.col-12,.form-group,.s12 {
 	background-color:transparent !important;;
 }
@@ -561,6 +621,7 @@ label {display:none;}
 h1,#that,.status {font-size: 0.2em;color:#fbd303;position:relative;margin:0% 20% 0% 30%;padding:0px 90px 0px 0px;text-decoration: underline;}
 #avail {color:#000;text-decoration: underline;}
 #that {margin:0% 40% 0% 10%; text-align:center;}
+#formAdd {margin:5% 20% 0% 60%}
 li#this.burger-status{text-decoration: bold;}
 h1,#avail,.status{text-align: center}
 li.burger-status, .btn, #grid-snap,li,h4 {
@@ -586,7 +647,7 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-@media (max-width: 325px) {
+@media only screen and (max-width: 325px) and (min-width: 300px){
    div,.col-12,.form-group,.s12 {
 	background-color:transparent !important;;
 }
