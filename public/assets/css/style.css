@@ -432,13 +432,14 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-@media (max-width: 430px) {
+@media (max-width: 400px) {
    
-div#a, div#b, div#c, h2 {
+div#a, div#b, div#c, h2, .col-9 {
     /*float: none;*/
     width:  100%;
     height:  100%;
     position: relative;	
+    margin-top: 30%;
     font-family: 'Gravitas One', cursive;
 	color: #fff;
 	text-align: center;
