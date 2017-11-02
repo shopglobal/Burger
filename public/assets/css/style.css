@@ -501,17 +501,19 @@ label {display:none;}
 .col-9{width:100%;}
 .col-12{width:100%;}
 .btn-img.btn-tap{margin:05% 0% 0% 45%;}
+.dropdown,.sub-menu{display:none;}
 li#this.burger-status{text-decoration: bold;}
 h1,#avail,.status,#that{text-align: center}
 #this.burger-status {color:#bb5c06;}
 h1,h2,h3,h4{font-family: 'Fruktur', cursive;}
 #grid-snap {margin:0% 30% 0% 37%}
 #grid-add {margin:5% 50% 0% 35%}
+#page-header{font-size:1.2em;padding-top: 8%;margin:0% 10% 0% 10%;text-align: center}
 #that {font-size: 2.5em;color:#fbd303;position:relative;margin:0% 30% 0% 30%;padding:0px 100px 0px 0px;text-decoration: underline;}
 #avail {color:#000;text-decoration: underline;}
 #that{margin:0% 0% 0% 15%; text-align: center;}
 #formAdd {margin:5% 20% 0% 30%}
-#score {font-size:1.3em;text-decoration: underline;}
+#score {font-size:.7em;text-decoration: underline;}
 h1,#page-header{font-size:1.2em;}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
@@ -557,7 +559,7 @@ label {display:none;}
 .col-3{width:100%;}
 .col-9{width:100%;}
 .col-12{width:100%;}
-#page-header{font-size:1.2em;padding-top: 8%}
+#page-header{font-size:1.2em;padding-top: 8%;margin:0% 10% 0% 10%;text-align: center}
 .dropdown,.sub-menu{display:none;}
 /*h1,#that,.status{text-align: left}*/
 #grid-snap {margin:0% 50% 0% 20%}
@@ -614,6 +616,7 @@ label {display:none;}
 .col-3{width:100%;}
 .col-9{width:100%;}
 .col-12{width:100%;}
+.dropdown,.sub-menu{display:none;}
 .btn-img.btn-tap{margin:05% 0% 0% 45%;}
 #this.burger-status {color:#bb5c06;}
 #grid-add {margin:0% 60% 0% 0%}
@@ -664,6 +667,7 @@ div#a, div#b, div#c, h2 {
 	font-size: 1em;
 }
 label {display:none;}
+.dropdown,.sub-menu{display:none;}
 #thread {font-size:1.5em;}
 .col-3{width:100%;}
 .col-9{width:100%;}
@@ -677,6 +681,9 @@ h1,#that,.status {font-size: 1.5em;color:#fbd303;position:relative;margin:0% 20%
 #avail {color:#000;text-decoration: underline;}
 li#this.burger-status{text-decoration: bold;}
 #that {margin:0% 40% 0% 10%; text-align:center;}
+#formAdd {margin:5% 20% 0% 30%}
+#page-header{font-size:1.2em;padding-top: 8%;margin:0% 10% 0% 10%;text-align: center}
+#score {font-size:.5em;text-decoration: underline;}
 h1,#avail,.status{text-align: center}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
