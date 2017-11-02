@@ -312,6 +312,48 @@ div#c{
     background-color : green;
     float : right;
 }
+@media (max-width: 1440px) {
+   
+div#a, div#b, div#c, h2, h1.status {
+    /*float: none;*/
+    width: auto,
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+input#formVal.drawn-border {position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 10px;}
+#this.burger-status {color:#bb5c06;}
+#that {font-size: 1.5em;color:#fbd303;position:relative;margin:0% 0% 0% 20%;padding:0px 90px 0px 0px;text-decoration: underline;}
+#avail {color:#000;text-decoration: underline;}
+h1.status {position:relative;margin:0% 0% 0% 20%;padding:0px 0px 0px 10px;}
+
+li.burger-status, .btn, #grid-snap,li,h4 {
+    /*float: none;*/
+    width: auto,
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+ul.devoured-status {
+    /*float: none;*/
+    width: auto,
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
 @media (max-width: 1024px) {
    
 div#a, div#b, div#c, h2, h1.status {
