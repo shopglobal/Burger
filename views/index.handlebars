@@ -16,36 +16,38 @@
         <form class="create-update-form" action="/" method="POST" name="form" class="form">
                 <label>Burgers Name</label>
                 <input type="text" name="name" class="drawn-border" id="formVal">
-                <button class="btn-img btn-tap" type="submit">{{!-- <label></label> --}}
-                  <img class="drawn-border" src="/assets/images/burger-btn.png" alt="Add Burger" /></button>
+                <button id="grid-add" class="btn-img btn-tap" type="submit">{{!-- <label></label> --}}
+                  <img src="/assets/images/burger-btn.png" alt="Add Burger" /></button>
         </form>
         </div>
         <br>
       </div>
         <div class="col-9">
-        <div class="options devoured row " id="c">
-          <div class="col-12">
-            <h1 class="status" id="that">Devoured Burgers</h1>
+        <div alignt="center" class="options devoured row form-control col-9 col s12 m4 l3 " id="c">
+          <div alignt="center" class="">
+            <h1 class="status" alignt="center" id="that">Devoured</h1>
             
-            <ul class="burger-status">
+            <table alignt="center" class="burger-status li">
               {{#each burgers}}
                 {{#if this.devoured}}
-                  <li>
-                    {{this.burger_name}}
-                  </li>
+                  <table class="responsive-table" class="li">
+                  <tr align="center" >
+                    <th align="center" >{{this.burger_name}}</th>
+                  </tr>
+                  </table>
                 {{/if}}
               {{/each}}
-            </ul>
+            </table>
         </div>
         <br>
       </div>
       <br>
   </div>
-      <div class="col-3" >
+      <div class="options available row " >
         <br>
         <br>
-        <div class="options available row" id="b">
-                <h1 class="status" id="avail">Available Burgers</h1>
+        <div alignt="center" class="col s12 m8 l9" id="b">
+                <h1 class="status" alignt="center" id="avail">Available Burgers</h1>
                 <ul class="burger-status" >
                   {{#each burgers}}
                    {{#unless this.devoured}}
@@ -53,7 +55,7 @@
                         {{this.burger_name}} 
                         <form action="/{{this.id}}?_method=PUT" method="POST">
                           <input type="hidden" name="id" value="{{this.id}}" class="drawn-border" id="formVal">
-                          <button id="grid-snap" type="submit" class="btn-img btn-tap"><img src="/assets/images/burger-btn.png" alt="Devour!" /></button>
+                          <div><button id="grid-snap" type="submit" class="btn-img btn-tap"><img src="/assets/images/burger-btn.png" alt="Devour!" /></button></div>
                         </form>
                       </li>
                     {{/unless}}
