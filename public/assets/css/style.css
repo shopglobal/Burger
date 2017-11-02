@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fruktur', cursive;
 }
 
 button {
@@ -142,14 +142,11 @@ button:hover {
   display: inline-block;
   min-width: 40px;
   padding: 2em 0.5em;
-
   color: #fff;
   background-color: #29e;
   border: solid 2px #fff;
-
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
-
   transition: background-color 0.3s;
 }
 
@@ -215,8 +212,10 @@ button:hover {
 
 }
 
-.drawn-border {
+.drawn-border, label {
 	display: block;
+	position: relative;	
+	/*margin: 0% 30% 0% 30%;*/
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	padding:1em;
 	line-height:1.5em;
@@ -262,33 +261,199 @@ section.parallax::after {
     from {background-position: 50% 0px;}
     to {background-position: 50% -100px;}
 }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 div#a{
-    width : 33.3%;
+	font-family: 'Fruktur', cursive;	
+	text-align: inherit;
+    width : 100%;
     position: relative;
     background-color : black;
     float: left
 }
 div#b{
-    width : 33.3%;
+	font-family: 'Fruktur', cursive;	
+	text-align: inherit;
+    width : 100%;
     position: relative;
     background-color : orange;  
 }
 div#c{
-    width : 33.3%;
+	font-family: 'Fruktur', cursive;	
+	text-align: inherit;
+    width : 100%;
+    margin: auto;
     position: relative;
     background-color : green;
     float : right;
 }
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
+   
+div#a, div#b, div#c, h2, h1.status {
+    /*float: none;*/
+    width: auto,
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+input#formVal.drawn-border {position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 10px;}
+#this.burger-status {color:#bb5c06;}
+#that {font-size: 1.5em;color:#fbd303;position:relative;margin:0% 0% 0% 20%;padding:0px 90px 0px 0px;text-decoration: underline;}
+#avail {color:#000;text-decoration: underline;}
+h1.status {position:relative;margin:0% 0% 0% 20%;padding:0px 0px 0px 10px;}
+
+li.burger-status, .btn, #grid-snap,li,h4 {
+    /*float: none;*/
+    width: auto,
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+ul.devoured-status {
+    /*float: none;*/
+    width: auto,
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
+@media (max-width: 768px) {
+   
+div#a, div#b, div#c, h2 {
+    /*float: none;*/
+    width:  100%;
+    height:  100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+li.burger-status, .btn, #grid-snap,li,h4 {
+    /*float: none;*/
+    width:  auto;
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+ul.devoured-status {
+    /*float: none;*/
+    width:  100%;
+    height: 100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
+@media (max-width: 430px) {
+   
+div#a, div#b, div#c, h2 {
+    /*float: none;*/
+    width:  100%;
+    height:  100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+li {text-align: left;margin:0% 0% 0% 45%;}
+ul.burger-status,.col-3 {
+    /*float: none;*/
+    width: 100%;
+    height: auto;
+    position: relative;	
+    margin: 00% 20% 0% 15%;
+    /*padding: 10px 10px 10px 10px;*/
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+li.burger-status {text-align: left;margin:0% 60% 0% 5%;}
+.status {}
+li.burger-status,.burger-status, {
+    /*float: none;*/
+    width:  auto;
+    height: auto;
+    position: relative;	
+    margin: 0px 700px 0px 0px;
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.8em;
+}
+#this {text-align: left;margin:0% 0% 0% 5%;font-size: 2em;}
+h1,div#b {text-align: left;margin:0% 0% 0% 5%;}
+h2, {text-align: left;margin:0% 0% 0% 5%;font-size: 2em;}
+h1.status {font-size: 2em;}
+ul.devoured-status {
+    /*float: none;*/
+    width:  100%;
+    height: 100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
+/*@media (max-width: 320px) {
    
 div#a, div#b, div#c {
     float: none;
     width: auto
 }
-}
+*/
 
 .parallax img {
 
@@ -337,9 +502,7 @@ section.sweets-ops {
 	display: flex;
 	justify-content: row;	
 }
-.options {
-	flex-grow: 1;
-}
+
 .burger-status {
 	font-size: 1.6em;
 }
@@ -348,15 +511,15 @@ section.sweets-ops {
 }
 .create-update-form .form-group {
 	position: relative;
-	margin: 05% 05% 05% 05%;
+	margin: inherit inherit inherit inherit;
 }
 
 label {
 	color: red;
-	position: absolute;
+	position: relative;
 	top: 0;
 	font-size: 18px;
-	margin: 10px;
+	margin: 0% 59% 0% 23%;
 	padding: 0 10px;
 	-webkit-transition: top .2s ease-in-out, 
 	                  font-size .2s ease-in-out;
@@ -372,7 +535,7 @@ label {
 
 
 input[type=text] {
-  padding:  24px 16px 18px 16px;
+  /*padding:  24px 16px 18px 16px;*/
   font-size: 20px;
   color: red;
 } 
@@ -464,4 +627,28 @@ padding:0px;
 font-size: 11px;
 padding: 11px 0 0 0px;
 border-top:1px solid #dedede;
+}
+.btn-img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    outline: 1px dotted blue;
+}
+.btn-img .img-wrap {
+    margin: 10px;
+}
+
+.btn-img img {
+    display: block;
+}
+
+.btn-img:hover .img-wrap {
+    background-color: black;
+}
+
+.btn-img:hover img {
+    opacity: 0.8;
 }
