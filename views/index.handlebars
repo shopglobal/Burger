@@ -10,6 +10,37 @@
     </section>
     <section>
       <div class="burger-ops row">
+        <div class="options" id="a">
+          <div class="col-12 form-group s12">
+        <h2 id="thread">Add a Burger</h2>
+        <form class="create-update-form" action="/" method="POST" name="form" class="form">
+                <label>Burgers Name</label>
+                <input type="text" name="name" class="drawn-border" id="formVal">
+                <button class="btn-img btn-tap" type="submit">{{!-- <label></label> --}}
+                  <img class="drawn-border" src="/assets/images/burger-btn.png" alt="Add Burger" /></button>
+        </form>
+        </div>
+        <br>
+      </div>
+        <div class="col-9">
+        <div class="options devoured row " id="c">
+          <div class="col-12">
+            <h1 class="status" id="that">Devoured Burgers</h1>
+            
+            <ul class="burger-status">
+              {{#each burgers}}
+                {{#if this.devoured}}
+                  <li>
+                    {{this.burger_name}}
+                  </li>
+                {{/if}}
+              {{/each}}
+            </ul>
+        </div>
+        <br>
+      </div>
+      <br>
+  </div>
       <div class="col-3" >
         <br>
         <br>
@@ -30,37 +61,6 @@
                 </ul>
             <br>
         </div>
-      </div>
-      <div class="col-9">
-        <div class="options devoured row " id="c">
-          <div class="col-12">
-            <h1 class="status" id="that">Devoured Burgers</h1>
-            
-            <ul class="burger-status">
-              {{#each burgers}}
-                {{#if this.devoured}}
-                  <li>
-                    {{this.burger_name}}
-                  </li>
-                {{/if}}
-              {{/each}}
-            </ul>
-        </div>
-        <br>
-      </div>
-      <br>
-  </div>
-  <div class="options" id="a">
-          <div class="col-12 form-group">
-        <h2 id="thread">Add a Burger</h2>
-        <form class="create-update-form" action="/" method="POST" name="form" class="form">
-                <label>Burgers Name</label>
-                <input type="text" name="name" class="drawn-border" id="formVal">
-                <button class="btn-img btn-tap" type="submit">{{!-- <label></label> --}}
-                  <img class="drawn-border" src="/assets/images/burger-btn.png" alt="Add Burger" /></button>
-        </form>
-        </div>
-        <br>
       </div>
 </div>
 </section>

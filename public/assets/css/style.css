@@ -12,9 +12,8 @@
 	padding: 30px; 
 	
 }
-div.jumbotron, html {
+div.jumbotron, html, {
 	position: relative;
-	background-color:transparent;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -211,17 +210,17 @@ button:hover {
 #page-body {
 
 }
-
+input#formVal.drawn-border,{position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 400px;}
 .drawn-border, label {
 	display: block;
-	position: relative;	
+	position: relative !important;
 	/*margin: 0% 30% 0% 30%;*/
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	padding:1em;
 	line-height:1.5em;
-	background:hsla(67, 95%, 95%, 1);
-	color: hsla(0, 95%, 35%, 1);
-	border: solid 5px rgba(246,200,71,1);
+	background:hsla(67, 95%, 95%, 1) !important;
+	color: hsla(0, 95%, 35%, 1) !important;
+	border: solid 5px rgba(246,200,71,1) !important;
 }
 
 section.parallax { 
@@ -355,27 +354,31 @@ ul.devoured-status {
 }
 }
 @media (max-width: 1024px) {
-   
-div#a, div#b, div#c, h2, h1.status {
+div,.col-12,.form-group,.s12 {
+	background-color:transparent !important;;
+}
+div#a, div#b, div#c, h2 {
     /*float: none;*/
-    width: auto,
-    height: auto;
+    width:  100%;
+    height:  100%;
     position: relative;	
     font-family: 'Gravitas One', cursive;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 1.1em;
+	font-size: 1em;
 }
-input#formVal.drawn-border {position:relative;margin:0% 0% 0% 30%;padding:0px 0px 0px 10px;}
-#this.burger-status {color:#bb5c06;}
-#that {font-size: 1.5em;color:#fbd303;position:relative;margin:0% 0% 0% 20%;padding:0px 90px 0px 0px;text-decoration: underline;}
-#avail {color:#000;text-decoration: underline;}
-h1.status {position:relative;margin:0% 0% 0% 20%;padding:0px 0px 0px 10px;}
-
+label {display:none;}
+#thread {font-size:1.5em;}
+.col-3{width:100%;}
+.col-9{width:100%;}
+.col-12{width:100%;}
+.btn-img.btn-tap{margin:05% 0% 0% 45%;}
+li#this.burger-status{text-decoration: bold;}
+h1,#avail,.status{text-align: center}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
-    width: auto,
+    width:  auto;
     height: auto;
     position: relative;	
     font-family: 'Gravitas One', cursive;
@@ -386,8 +389,8 @@ li.burger-status, .btn, #grid-snap,li,h4 {
 }
 ul.devoured-status {
     /*float: none;*/
-    width: auto,
-    height: auto;
+    width:  100%;
+    height: 100%;
     position: relative;	
     font-family: 'Gravitas One', cursive;
 	color: #fff;
@@ -409,6 +412,15 @@ div#a, div#b, div#c, h2 {
 	text-transform: uppercase;
 	font-size: 1em;
 }
+label {display:none;}
+#thread {font-size:1.5em;}
+.col-3{width:100%;}
+.col-9{width:100%;}
+.col-12{width:100%;}
+.btn-img.btn-tap{margin:05% 0% 0% 45%;}
+li#this.burger-status{text-decoration: bold;}
+h1,#avail,.status{text-align: center}
+h1,#page-header{font-size:1.2em;}
 li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
     width:  auto;
@@ -432,52 +444,40 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 425px) {
    
-div#a, div#b, div#c, h2, .col-9 {
+div#a, div#b, div#c, h2 {
     /*float: none;*/
     width:  100%;
     height:  100%;
     position: relative;	
-    margin-top: 30%;
     font-family: 'Gravitas One', cursive;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1em;
 }
-li {text-align: left;margin:0% 0% 0% 45%;}
-ul.burger-status,.col-3 {
-    /*float: none;*/
-    width: 100%;
-    height: auto;
-    position: relative;	
-    margin: 00% 20% 0% 15%;
-    /*padding: 10px 10px 10px 10px;*/
-    font-family: 'Gravitas One', cursive;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: .8em;
-}
-li.burger-status {text-align: left;margin:0% 60% 0% 5%;}
-.status {}
-li.burger-status,.burger-status, {
+label {display:none;}
+#thread {font-size:1.5em;}
+.col-3{width:100%;}
+.col-9{width:100%;}
+.col-12{width:100%;}
+h1,#page-header{font-size:0.2em;}
+.btn-img.btn-tap{margin:05% 0% 0% 45%;}
+li#this.burger-status{text-decoration: bold;}
+h1,#avail,.status{text-align: center}
+li.burger-status, .btn, #grid-snap,li,h4 {
     /*float: none;*/
     width:  auto;
     height: auto;
     position: relative;	
-    margin: 0px 700px 0px 0px;
     font-family: 'Gravitas One', cursive;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 1.8em;
+	font-size: 0.8em;
 }
-#this {text-align: left;margin:0% 0% 0% 5%;font-size: 2em;}
-h1,div#b {text-align: left;margin:0% 0% 0% 5%;}
-h2, {text-align: left;margin:0% 0% 0% 5%;font-size: 2em;}
-h1.status {font-size: 2em;}
 ul.devoured-status {
     /*float: none;*/
     width:  100%;
@@ -490,6 +490,97 @@ ul.devoured-status {
 	font-size: 12.8em;
 }
 }
+
+@media (max-width: 375px) {
+   
+div#a, div#b, div#c, h2 {
+    /*float: none;*/
+    width:  100%;
+    height:  100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+label {display:none;}
+#thread {font-size:1.5em;}
+.col-3{width:100%;}
+.col-9{width:100%;}
+.col-12{width:100%;}
+.btn-img.btn-tap{margin:05% 0% 0% 45%;}
+li#this.burger-status{text-decoration: bold;}
+h1,#avail,.status{text-align: center}
+li.burger-status, .btn, #grid-snap,li,h4 {
+    /*float: none;*/
+    width:  auto;
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+ul.devoured-status {
+    /*float: none;*/
+    width:  100%;
+    height: 100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
+@media (max-width: 320px) {
+   
+div#a, div#b, div#c, h2 {
+    /*float: none;*/
+    width:  100%;
+    height:  100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+label {display:none;}
+#thread {font-size:1.5em;}
+.col-3{width:100%;}
+.col-9{width:100%;}
+.col-12{width:100%;}
+/*img.drawn-border{pa}*/
+.btn-img.btn-tap{margin:05% 0% 0% 45%;}
+li#this.burger-status{text-decoration: bold;}
+h1,#avail,.status{text-align: center}
+li.burger-status, .btn, #grid-snap,li,h4 {
+    /*float: none;*/
+    width:  auto;
+    height: auto;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+ul.devoured-status {
+    /*float: none;*/
+    width:  100%;
+    height: 100%;
+    position: relative;	
+    font-family: 'Gravitas One', cursive;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12.8em;
+}
+}
+
 /*@media (max-width: 320px) {
    
 div#a, div#b, div#c {
@@ -552,16 +643,17 @@ section.sweets-ops {
 .sweets-status {
 	font-size: 1.6em;
 }
-.create-update-form .form-group {
+.create-update-form,.form-group {
+	background-color:transparent !important;
 	position: relative;
-	margin: inherit inherit inherit inherit;
+	margin: 0% 40% 0% 0%;
 }
 
 label {
 	color: red;
 	position: relative;
 	top: 0;
-	font-size: 18px;
+	font-size: 10px;
 	margin: 0% 59% 0% 23%;
 	padding: 0 10px;
 	-webkit-transition: top .2s ease-in-out, 
